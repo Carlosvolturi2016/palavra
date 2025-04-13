@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uma Palavra pra abençoar seu dia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="fundo-dinamico"></div>
+    <div class="radio-player">
+        <div class="radio-name">Pregação</div> <!-- Nome da rádio -->
+        <div id="current-track">Tocando: Nenhuma música selecionada</div> <!-- Movido para cima -->
+        <div class="cover-container">
+            <img id="album-cover" src="" alt="Capa do Álbum">
+        </div>
+        <div class="controls">
+            <button id="prev-btn">Anterior</button>
+            <button id="play-btn">Play</button>
+            <button id="next-btn">Próxima</button>
+        </div>
+        <div class="som">
+            <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="0.5">
+        </div>
+    </div>
+    <audio id="audio-player"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
